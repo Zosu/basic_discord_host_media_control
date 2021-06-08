@@ -19,12 +19,12 @@ async def playt(ctx):
 @bot.command()
 async def next(ctx):
     win32api.keybd_event(VK_MEDIA_NEXT_TRACK, 0, KEYEVENTF_EXTENDEDKEY, 0)
-    await ctx.send(str(ctx.author) + " called to go to the next")
+    await ctx.send(str(ctx.author) + " called to go to the next media")
 
 @bot.command()
 async def prev(Ctx):
     win32api.keybd_event(VK_MEDIA_PREV_TRACK, 0, KEYEVENTF_EXTENDEDKEY, 0)
-    await ctx.send(str(ctx.author) + " called to go to the previous ")
+    await ctx.send(str(ctx.author) + " called to go to the previous media")
 
 @bot.command()
 async def jump(ctx):
